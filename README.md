@@ -13,4 +13,8 @@ String[] inputs = {"red", "blue", "green", "yellow"};
 System.out.println(a.validCheck("blue", inputs));  -> returns true
 System.out.println(a.validCheck("purple", inputs));  -> returns false
 
-array input MUST be initialized first.
+array input can be declared in the parameter
+
+System.out.println(a.validCheck('a', new char[] {'a', 'c', 'd', 'f'}))
+
+Currently only works for String and char data types.
